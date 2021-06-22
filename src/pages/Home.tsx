@@ -4,15 +4,18 @@ import logoImg from "../assets/images/logo.svg";
 import googleIconImg from "../assets/images/google-icon.svg";
 import { Button } from "../components/Button";
 import "../styles/auth.scss";
+import { useAuth } from "../hooks/useAuth";
 
 export const Home = () => {
   //History is a function for navigate without ahref
   const history = useHistory();
-  function navigateToNewRoom() {
-    history.push("/rooms/new");
-  }
 
-  function handleCreateRoom() {
+  const { user, signInWithGoogle } = useAuth();
+
+  async function handleCreateRoom() {
+    if (!user) {
+      await signInWithGoogle();
+    }
     history.push("/rooms/new");
   }
 
@@ -30,7 +33,7 @@ export const Home = () => {
       <main>
         <div className="main-content">
           <img src={logoImg} alt="TheBestQuestion" />
-          <button className="create-row" onClick={navigateToNewRoom}>
+          <button className="create-row" onClick={handleCreateRoom}>
             <img src={googleIconImg} alt="logo do google" />
             Crie sua sala com o Google
           </button>
