@@ -9,12 +9,12 @@
   &.isMarked {
     border: 2px solid #ababad;
     background: #a8edf7;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
   }
 
   &.isAnswered {
     background: #cecccc;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
   }
 
   & + .question {
