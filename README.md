@@ -1,11 +1,6 @@
 <p align="center">
   <img alt="Letmeask" src="github/letmeask.svg" width="160px">
 </p>
-
-<h1 align="center">
-    <img alt="Letmeask" title="Letmeask" src="github/layout.svg" />
-</h1>
-
 <br>
 
 ## 🧪 Technologies
