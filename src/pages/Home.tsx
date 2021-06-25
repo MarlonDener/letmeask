@@ -1,12 +1,16 @@
 import { useHistory } from "react-router-dom";
+import { database } from "../services/firebase";
+import { FormEvent, useState } from "react";
+
+import { Button } from "../components/Button";
+
 import ilustrationImg from "../assets/images/ilustraImg.svg";
 import logoImg from "../assets/images/logo.svg";
 import googleIconImg from "../assets/images/google-icon.svg";
-import { Button } from "../components/Button";
-import "../styles/auth.scss";
+
 import { useAuth } from "../hooks/useAuth";
-import { FormEvent, useState } from "react";
-import { database } from "../services/firebase";
+
+import "../styles/auth.scss";
 
 export const Home = () => {
   //History is a function for navigate without ahref
