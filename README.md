@@ -3,8 +3,10 @@
 </p>
 <br>
 
-<p>With this application, you can create rooms to receive questions, and receive feedback about them.</p>
-
+<h4 align="center">
+  With this application, you can create rooms to receive questions, and receive feedback about them.
+</h4>
+<br>
 ## 🧪 Technologies
 
 This project was developed using the following technologies:
