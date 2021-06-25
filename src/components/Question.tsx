@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+
 import "../styles/Question.scss";
 
 type QuestionProps = {
@@ -25,7 +26,7 @@ export function Question({
         isAnswered ? "isAnswered" : ""
       }`}
     >
-      <p>{content}</p>
+      <p> {content} </p>
       <footer>
         <div className="user-info">
           <img src={author.avatar} alt={author.name} />

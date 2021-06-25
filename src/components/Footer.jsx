@@ -2,8 +2,6 @@ import "../styles/Footer.scss";
 
 export function Footer() {
   return (
-    <footer className="footer">
-      Todos os direitos reservados: Marlon Dener &copy;
-    </footer>
+    <footer className="footer">Desenvolvido por: Marlon Dener &copy;</footer>
   );
 }
