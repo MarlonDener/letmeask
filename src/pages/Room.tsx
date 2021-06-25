@@ -63,6 +63,7 @@ export function Room() {
         .ref(`rooms/${roomId}/questions/${questionId}/likes/${likeId}`)
         .remove();
     } else {
+      //Add like
       await database.ref(`rooms/${roomId}/questions/${questionId}/likes`).push({
         authorId: user?.id,
       });

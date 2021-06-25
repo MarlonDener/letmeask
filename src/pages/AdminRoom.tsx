@@ -20,7 +20,6 @@ type RoomParams = {
 };
 
 export function AdminRoom() {
-  //const { user } = useAuth();
   //Get parameter ID Room
   const params = useParams<RoomParams>();
   //const [newQuestion, setNewQuestion] = useState("");
@@ -46,7 +45,7 @@ export function AdminRoom() {
       await database.ref(`rooms/${roomId}/questions/${questionId}`).remove();
     }
   }
-  async function handleMarkedQuestion(questionId: string) {
+  async function handleMarkedAsQuestion(questionId: string) {
     await database.ref(`rooms/${roomId}/questions/${questionId}`).update({
       isHighlighted: true,
     });
@@ -101,7 +100,7 @@ export function AdminRoom() {
                       </button>
                       <button
                         type="button"
-                        onClick={() => handleMarkedQuestion(question.id)}
+                        onClick={() => handleMarkedAsQuestion(question.id)}
                       >
                         <img src={answerImg} alt="Destacar pergunta" />
                       </button>

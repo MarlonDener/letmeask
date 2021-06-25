@@ -37,11 +37,11 @@ export const Home = () => {
     const roomRef = await database.ref(`rooms/${roomCode}`).get();
 
     if (!roomRef.exists()) {
-      alert("Room does not exists");
+      alert("Sala não existe");
       return;
     }
     if (roomRef.val().endedAt) {
-      alert("This room does not exist");
+      alert("Essa sala não existe, ou foi finalizada pelo admin");
       return;
     }
     history.push(`/rooms/${roomCode}`);
