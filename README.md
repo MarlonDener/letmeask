@@ -3,9 +3,13 @@
 </p>
 <br>
 
-<h4 align="center">
+<h4>
   With this application, you can create rooms to receive questions, and receive feedback about them.
 </h4>
+<br>
+<p align="center">
+  <img alt="Letmeask" src="github/layout.svg">
+</p>
 <br>
 ## 🧪 Technologies
 
